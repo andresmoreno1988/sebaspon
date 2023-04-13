@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <title>MOKEPON!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+    <section id="seleccionar-mascota">
+                    
+        <div class="img-titulo"><img id="img-bola" src="./imagenes/pokebola.gif" alt=""><h1 class="titulo">Sebastiamon</h1><img id="img-bola2" src="./imagenes/pokebola.gif" alt=""></div>
+                 
+        <h2 class="subtitulo">Elige tu Pokemon:</h2>
+
+        <div id="contenedor-de-tarjetas" class="tarjetas">
+            
+        </div>
+        <button id = "btn-selec-mascota">Seleccionar</button>
+    </section>
+        
+    <section id="ver-mapa">
+        <div class="img-titulo"><img  src="./imagenes/bola2.png" alt=""><h1 class="titulo">Elige tu enemigo</h1><img src="./imagenes/bola2.png" alt=""></div>
+        <canvas id="mapa"></canvas>
+        <button ontouchend="parar()" onmouseup="parar()" ontouchstart="moverArriba()" onmousedown="moverArriba()">Arriba</button>
+        <div>
+            <button ontouchend="parar()" onmouseup="parar()" ontouchstart="moverIzquierda()" onmousedown="moverIzquierda()">Izquierda</button>
+            <button ontouchend="parar()" onmouseup="parar()" ontouchstart="moverAbajo()" onmousedown="moverAbajo()">Abajo</button>
+            <button ontouchend="parar()" onmouseup="parar()" ontouchstart="moverDerecha()" onmousedown="moverDerecha()">Derecha</button>            
+        </div>
+    </section>
+
+    <section id="seleccionar-ataque">
+        <h1 class="titulo2"><img src="./imagenes/bola2.png" alt="">Sebastiamon<img src="./imagenes/bola2.png" alt=""></h1>
+        <h2 class="subtitulo">Elige tus 5 ataques</h2>
+
+        <div id="contenedorAtaques" class="ataques">
+            <!--<button id = "btn-fuego" class="boton-ataque">Fuego<img src="./imagenes/fuego.png" alt="fuego"></button>
+            <button id = "btn-agua" class="boton-ataque">Agua<img src="./imagenes/agua1.png" alt="agua"></button>
+            <button id = "btn-tierra" class="boton-ataque">Tierra<img src="./imagenes/tierrra.png" alt="tierra"></button>-->
+        </div>
+       
+        <div id="mensajes">
+               <p id="resultado">Mucha suerte</p> <!--<p>Tu mascota atacó con <span id = "ataque-jugador"></span>, las mascota del enemigo atacó con <span id = "ataque-enemigo"></span> - GANASTE 🎉</p>-->
+               <section id="reiniciar">
+                <button id ="btn-reiniciar">Reiniciar</button>
+                </section>
+        </div>
+
+        <div class="resultado-ataques">
+            <div class="grid-resultado">
+                <p>Jugador</p>
+                <p id = "vidas-jugador"> Tienes 0 victorias</p>
+                <p id = "mascota-jugador"></p>
+                <div id="ataque-jugador"></div>
+            </div>
+            <div class="grid-resultado">
+                <p>Enemigo</p>
+                <p id = "vidas-enemigo">Tiene 0 victorias</p>
+                <p id = "mascota-enemigo"></p>
+                <div id="ataque-enemigo"></div>
+            </div>
+        </div>
+    </section>
+    <script src="js/mokepon.js"></script>
+</body>
+</html>

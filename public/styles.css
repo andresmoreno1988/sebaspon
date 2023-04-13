@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+::-webkit-scrollbar {
+    display: none;
+}
+body {
+    font-family: 'Black Ops One', cursive;
+    background-image: url(./imagenes/fondo.jpg);
+    background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	text-align: center;
+}
+#seleccionar-mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.img-titulo {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+#img-bola {
+    animation-direction: reverse;
+    width: 200px;
+    height: 100px;
+    background: transparent;
+    padding: 10px;
+    
+}
+#img-bola2 {
+    transform: rotate(180deg);
+    width: 200px;
+    height: 100px;
+    background: transparent;
+    padding: 10px;
+}
+
+.img-titulo img {
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    padding: 10px;
+}
+.titulo img, .titulo2 img {
+    width: 70px;
+    height: 70px;
+    background: transparent;
+    padding: 10px;
+    
+}
+
+.titulo, .titulo2 {
+    font-size: 54px;
+    color : rgb(248, 246, 245);
+    background: #D61355;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.subtitulo {
+font-size: 32px;
+color: whitesmoke;
+background: #D61355;
+border-radius: 20px;
+padding: 5px;
+}
+input {
+    display: none;
+}
+
+input:checked + label {
+    background-color: #3f4148;
+    scale: 115%;
+}
+
+.tarjetas {
+    display: flex;
+}
+
+.tarjeta-de-mokepon {
+    width: 250px;
+    height: 100px;
+    background: #D61355;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px solid rgb(211, 135, 35);
+    border-radius: 20px;
+    display: flex;
+    color: whitesmoke;
+    font-size: 22px;
+    justify-content: center;
+    align-items: center;
+}
+.tarjeta-de-mokepon img {
+    height: 94px;
+}
+
+#btn-selec-mascota {
+    font-family: 'Black Ops One', cursive;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    background: #D61355;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    border-radius: 20px;
+    border: 1px solid rgb(211, 135, 35);
+    color: whitesmoke;
+    
+}
+
+#seleccionar-ataque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ataques {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.boton-ataque img{
+    width: 100px;
+    height: 70px;
+    
+}
+
+.boton-ataque {
+    width: 200px;
+    height: 100px;
+    background: #D61355;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px solid rgb(211, 135, 35);
+    border-radius: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row; 
+    color:antiquewhite; 
+    font-family: 'Black Ops One', cursive; 
+    font-size: 20px; 
+}
+
+.boton-ataque:hover {
+    scale: 110%;
+    background-color: #660e2c;
+}
+
+#mensajes {
+    width: 260px;
+    background: #D61355;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+#btn-reiniciar {
+    border: 1px solid white;
+    color: white;
+    font-family: 'Black Ops One', cursive;
+    font-size: 15px;
+    background: transparent;
+    border-radius: 20px;
+}
+#btn-reiniciar:hover {
+    scale: 120%;
+}
+        
+.resultado-ataques {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    margin: 5px;
+    justify-content: space-between;
+    column-gap: 25px;
+    color: #100f0f;
+    font-size: 19px;
+    
+}
+
+.grid-resultado {
+    border: 1px solid white;
+    border-radius: 20px;
+    grid-row-start: 1;
+
+}
+#mascota-jugador img {
+    height: 154px;
+    /*height: 50px;*/
+}
+#mascota-enemigo img {
+    height: 154px;
+    /*height: 50px;*/
+}
+
+#ver-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#ver-mapa button {
+    width: 100px;
+    height: 50px;
+    border: 1px solid white;
+    color: white;
+    font-family: 'Black Ops One', cursive;
+    font-size: 15px;
+    background: transparent;
+    border-radius: 20px;
+    margin: 10px 0;
+}
+#ver-mapa div {
+    display: flex;
+    
+}
+
+
+@media (max-width: 1160px) {
+    .tarjetas, .ataques {
+        flex-direction: row;
+    }
+    .ataques {
+        scale: 80%;
+    }
+    
+}
+@media (max-width: 860px) {
+    .tarjetas, .ataques {
+        flex-direction: column;
+    }
+    .img-titulo {
+        scale: 65%;
+    }
+    .titulo2 {
+        scale: 65%;
+        
+    }
+    #ver-mapa {
+        scale: 80%;
+    }
+    
+}
+@media (max-width: 460px) {
+    .tarjetas, .ataques {
+        flex-direction: column;
+    }
+    .img-titulo {
+        scale: 50%;
+    }
+    .titulo2 {
+        scale: 50%;
+    }
+    #ver-mapa {
+        scale: 60%;
+    }
+    
+}
+
+@media (max-width: 360px) {
+    .tarjetas, .ataques {
+        flex-direction: column;
+    }
+    .img-titulo {
+        scale: 40%;
+    }
+    .titulo2 {
+        scale: 40%;
+    }
+    #ver-mapa {
+        scale: 40%;
+    }
+}
+
