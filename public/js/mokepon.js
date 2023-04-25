@@ -185,7 +185,7 @@ function iniciarJuego(){
 }
 
 function uniserAlJuego() {
-    fetch("http://192.168.3.230:8080/unirse")
+    fetch("https://andresmoreno1988.github.io/sebaspon/public:8080/unirse")
         .then(function (res) {
             if(res.ok) {
                 res.text()
